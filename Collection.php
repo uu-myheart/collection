@@ -423,7 +423,7 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate, JsonSeria
     /**
      * Get all items except for those with the specified keys.
      *
-     * @param  \Illuminate\Support\Collection|mixed  $keys
+     * @param  \Curia\Collect\Collection|mixed  $keys
      * @return static
      */
     public function except($keys)
@@ -1751,7 +1751,7 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate, JsonSeria
     /**
      * Get a base Support collection instance from this collection.
      *
-     * @return \Illuminate\Support\Collection
+     * @return \Curia\Collect\Collection
      */
     public function toBase()
     {

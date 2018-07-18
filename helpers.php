@@ -5,7 +5,6 @@ use Curia\Collect\Str;
 use Curia\Collect\Optional;
 use Curia\Collect\Collection;
 use Curia\Collect\Debug\Dumper;
-use Illuminate\Contracts\Support\Htmlable;
 use Curia\Collect\HigherOrderTapProxy;
 
 if (! function_exists('array_add')) {
@@ -393,7 +392,7 @@ if (! function_exists('collect')) {
      * Create a collection from the given value.
      *
      * @param  mixed  $value
-     * @return \Illuminate\Support\Collection
+     * @return \Curia\Collect\Collection
      */
     function collect($value = null)
     {

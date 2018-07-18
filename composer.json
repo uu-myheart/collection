@@ -1,0 +1,25 @@
+{
+    "name": "curia/collect",
+    "description": "Illuminate Collections as a separate package.",
+    "license": "MIT",
+    "homepage": "https://laravel.com",
+    "authors": [
+        {
+            "name": "Taylor Otwell",
+            "email": "taylor@laravel.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "symfony/var-dumper": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Curia\\Support\\": ""
+        },
+        "files": [
+            "helpers.php"
+        ]
+    },
+    "minimum-stability": "dev"
+}

@@ -1,9 +1,8 @@
 <?php
 
-namespace Curia\Framework;
+namespace Curia\Collect;
 
 use ArrayAccess;
-use Curia\Collect\Arr;
 
 class Config implements ArrayAccess
 {

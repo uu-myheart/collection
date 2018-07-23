@@ -1682,7 +1682,8 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate, JsonSeria
     public function toArray()
     {
         return array_map(function ($value) {
-            return $value instanceof Arrayable ? $value->toArray() : $value;
+            // return $value instanceof Arrayable ? $value->toArray() : $value;
+            return $value instanceof stdClass ? (array) $value : $value;
         }, $this->items);
     }
 

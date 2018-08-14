@@ -678,6 +678,7 @@ class Str
             ];
         }
 
+        return isset($languageSpecific[$language]) ? $languageSpecific[$language] : null;
         return $languageSpecific[$language] ?? null;
     }
 }

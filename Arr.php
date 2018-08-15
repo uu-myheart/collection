@@ -291,7 +291,7 @@ class Arr
 
         if (strpos($key, '.') === false) {
             return isset($array[$key]) ? $array[$key] : value($default);
-            return $array[$key] ?? value($default);
+            // return $array[$key] ?? value($default);
         }
 
         foreach (explode('.', $key) as $segment) {

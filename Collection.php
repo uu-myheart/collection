@@ -153,8 +153,9 @@ class Collection implements ArrayAccess, Countable, IteratorAggregate, JsonSeria
             return;
         }
 
-        $values = (isset($key) ? $this->pluck($key) : $this)
-                    ->sort()->values();
+        $tmp = isset($key) ? $this->pluck($key) : $this;
+        
+        $values = $tmp->sort()->values();
 
         $middle = (int) ($count / 2);
 
